@@ -1,18 +1,21 @@
-#include <iostream>
+﻿#pragma once
 
+#include <iostream>
 using namespace std;
 
-const int MAX_SIZE = 100;
+#ifndef FIXED_CAPACITY_STACK_H
+#define FIXED_CAPACITY_STACK_H
 
-class DynamicStack {
+template <typename T>
+class FixedCapacityStack {
 public:
-    DynamicStack() : size_(0) {
+    FixedCapacityStack() : size_(0) {
         for (int i = 0; i < MAX_SIZE; ++i) {
-            stack_[i] = 0;
+            stack_[i] = T();
         }
     }
 
-    void push(int value) {
+    void push(T value) {
         if (size_ < MAX_SIZE) {
             stack_[size_] = value;
             size_++;
@@ -29,7 +32,7 @@ public:
         }
     }
 
-    int top() const{
+    T top() const {
         if (!isEmpty()) {
             return stack_[size_ - 1];
         }
@@ -45,28 +48,9 @@ public:
     }
 
 private:
-    int stack_[MAX_SIZE];
+    static const int MAX_SIZE = 100;
+    T stack_[MAX_SIZE];
     size_t size_;
 };
 
-int main() {
-    DynamicStack stack;
-
-    stack.push(1);
-    stack.push(2);
-    stack.push(3);
-    stack.push(4);
-    stack.push(5);
-    stack.push(6);
-    stack.push(7);
-    stack.push(8);
-
-    int sizeOfStack = stack.size();
-
-    for (int i = 0; i < sizeOfStack; i++) {
-        cout << stack.top() << endl;
-        stack.pop();
-    }
-
-    return 0;
-}
+#endif

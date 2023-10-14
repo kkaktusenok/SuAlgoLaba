@@ -1,9 +1,10 @@
-#include "lab3T2.h"
+#include "Stack.h"
 #include <iostream>
 using namespace std;
 
-int main() {
-    LinkedStack stack;
+int main()
+{
+    LinkedStack<int> stack;
 
     stack.push(1);
     stack.push(2);
@@ -16,7 +17,8 @@ int main() {
 
     int sizeOfStack = stack.size();
 
-    for (int i = 0; i < sizeOfStack; i++) {
+    for (int i = 0; i < sizeOfStack; i++)
+    {
         cout << stack.top() << endl;
         stack.pop();
     }
