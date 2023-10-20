@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TaskFive5", "TaskFive5\TaskFive5.vcxproj", "{EB1891EA-1385-4EBC-9214-C15EF0B9C629}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB1891EA-1385-4EBC-9214-C15EF0B9C629}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EB1891EA-1385-4EBC-9214-C15EF0B9C629}.Debug|Win32.Build.0 = Debug|Win32
+		{EB1891EA-1385-4EBC-9214-C15EF0B9C629}.Debug|x64.ActiveCfg = Debug|x64
+		{EB1891EA-1385-4EBC-9214-C15EF0B9C629}.Debug|x64.Build.0 = Debug|x64
+		{EB1891EA-1385-4EBC-9214-C15EF0B9C629}.Release|Win32.ActiveCfg = Release|Win32
+		{EB1891EA-1385-4EBC-9214-C15EF0B9C629}.Release|Win32.Build.0 = Release|Win32
+		{EB1891EA-1385-4EBC-9214-C15EF0B9C629}.Release|x64.ActiveCfg = Release|x64
+		{EB1891EA-1385-4EBC-9214-C15EF0B9C629}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+EndGlobal
